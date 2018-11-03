@@ -12,6 +12,7 @@
 		AA50E36F218E150D008DF684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA50E36D218E150D008DF684 /* Main.storyboard */; };
 		AA50E371218E150F008DF684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA50E370218E150F008DF684 /* Assets.xcassets */; };
 		AA50E374218E150F008DF684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA50E372218E150F008DF684 /* LaunchScreen.storyboard */; };
+		AA50E37C218E29E0008DF684 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50E37B218E29E0008DF684 /* WeatherService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AA50E370218E150F008DF684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA50E373218E150F008DF684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA50E375218E150F008DF684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA50E37B218E29E0008DF684 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				AA50E370218E150F008DF684 /* Assets.xcassets */,
 				AA50E372218E150F008DF684 /* LaunchScreen.storyboard */,
 				AA50E375218E150F008DF684 /* Info.plist */,
+				AA50E37B218E29E0008DF684 /* WeatherService.swift */,
 			);
 			path = uWeather;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA50E36C218E150D008DF684 /* ViewController.swift in Sources */,
+				AA50E37C218E29E0008DF684 /* WeatherService.swift in Sources */,
 				AA50E36A218E150D008DF684 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W56WB2C4W;
 				INFOPLIST_FILE = uWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ethanmartin.uWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6W56WB2C4W;
 				INFOPLIST_FILE = uWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.ethanmartin.uWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

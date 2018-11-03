@@ -9,12 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let weatherService = WeatherService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        weatherService.update()
     }
-
-
 }
 
