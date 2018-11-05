@@ -26,6 +26,7 @@
 		AA50E375218E150F008DF684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA50E37B218E29E0008DF684 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		AA50E37F218FD25B008DF684 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		AAB71F2B219096BE008280AA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		AA50E35D218E150D008DF684 = {
 			isa = PBXGroup;
 			children = (
+				AAB71F2B219096BE008280AA /* README.md */,
 				AA50E368218E150D008DF684 /* uWeather */,
 				AA50E367218E150D008DF684 /* Products */,
 			);
