@@ -13,6 +13,7 @@
 		AA50E371218E150F008DF684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA50E370218E150F008DF684 /* Assets.xcassets */; };
 		AA50E374218E150F008DF684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA50E372218E150F008DF684 /* LaunchScreen.storyboard */; };
 		AA50E37C218E29E0008DF684 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50E37B218E29E0008DF684 /* WeatherService.swift */; };
+		AA50E380218FD25B008DF684 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA50E37F218FD25B008DF684 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AA50E373218E150F008DF684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA50E375218E150F008DF684 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA50E37B218E29E0008DF684 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		AA50E37F218FD25B008DF684 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				AA50E369218E150D008DF684 /* AppDelegate.swift */,
 				AA50E36B218E150D008DF684 /* ViewController.swift */,
+				AA50E37F218FD25B008DF684 /* WeatherModel.swift */,
 				AA50E36D218E150D008DF684 /* Main.storyboard */,
 				AA50E370218E150F008DF684 /* Assets.xcassets */,
 				AA50E372218E150F008DF684 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				AA50E36C218E150D008DF684 /* ViewController.swift in Sources */,
 				AA50E37C218E29E0008DF684 /* WeatherService.swift in Sources */,
+				AA50E380218FD25B008DF684 /* WeatherModel.swift in Sources */,
 				AA50E36A218E150D008DF684 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

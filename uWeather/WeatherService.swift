@@ -10,8 +10,9 @@ import Foundation
 import CoreLocation
 
 protocol WeatherServiceDelegate {
-    func didGetWeatherInfo(jsonData: Any)
-    func didFail(withError: Error)
+    func weatherService(didUpdateWeather jsonData: Any)
+    func weatherService(didUpdateLocation location: CLLocation)
+    func weatherService(didFailWithError error: Error)
 }
 
 class WeatherService : NSObject, CLLocationManagerDelegate {
@@ -50,8 +51,8 @@ class WeatherService : NSObject, CLLocationManagerDelegate {
                 return
             }
             
-            print(json)
-            self.delegate?.didGetWeatherInfo(jsonData: json)
+            
+            self.delegate?.weatherService(didUpdateWeather: json)
         })
         
         task.resume()
@@ -64,7 +65,9 @@ class WeatherService : NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let currentLocation = locations.first {
             print("Got hit!: \(currentLocation)")
+            delegate?.weatherService(didUpdateLocation: currentLocation)
             getWeatherInfo(location: currentLocation)
+            locationManager.stopUpdatingLocation()
         }
     }
 }

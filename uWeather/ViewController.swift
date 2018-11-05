@@ -9,11 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let weatherService = WeatherService()
+    @objc var weatherModel = WeatherModel()
+    
+    @IBOutlet weak var summaryLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
+    
+    var weatherModelObservation: NSKeyValueObservation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        weatherService.update()
+        
+        weatherModelObservation = observe(\.weatherModel.updates) { object, change in
+            print("updating display")
+            DispatchQueue.main.async(execute: { self.updateView() })
+        }
+        
+        weatherModel.updateWeather()
+    }
+    
+    func updateView() {
+        summaryLabel.text = weatherModel.summary
+        tempLabel.text = "\(weatherModel.temperature)°"
+        locationLabel.text = weatherModel.location
+        iconImageView.image = UIImage(named: weatherModel.icon)
     }
 }
 
